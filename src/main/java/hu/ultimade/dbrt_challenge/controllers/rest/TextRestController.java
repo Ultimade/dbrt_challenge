@@ -13,7 +13,7 @@ public class TextRestController {
     private TextService textService;
 
     @GetMapping("/maganhangzo{SZOVEG}")
-    public Integer getCountOfVowelFromText(@RequestParam("SZOVEG") String data){
+    public Object getCountOfVowelFromText(@RequestParam("SZOVEG") String data){
 
         return textService.getCountOfVowelFromText(data);
     }

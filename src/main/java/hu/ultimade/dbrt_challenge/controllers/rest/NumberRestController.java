@@ -16,7 +16,7 @@ public class NumberRestController {
 
 
     @GetMapping("/primszam{SZAM}")
-    public boolean isNumberPrime(@RequestParam("SZAM") BigInteger number){
+    public Object isNumberPrime(@RequestParam("SZAM") BigInteger number){
 
         return numberService.isNumberPrime(number);
     }

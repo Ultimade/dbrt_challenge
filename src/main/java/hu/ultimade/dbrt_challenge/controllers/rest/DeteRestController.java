@@ -16,7 +16,7 @@ public class DeteRestController {
 
 
     @GetMapping("/melyiknap{DATUM}")
-    public String getDayOfTheWeek(@RequestParam("DATUM") LocalDate date){
+    public Object getDayOfTheWeek(@RequestParam("DATUM") LocalDate date){
 
         return dateService.getDayOfTheWeek(date);
     }
